@@ -1,0 +1,113 @@
+/*Pretende ser un Css sin Bootstrap*/
+
+body {
+    margin: 0;
+    font-family: verdana;
+  }
+  
+  /* estilo del Header */
+  .header {
+    background-color: #ffbcbc;
+    padding: 2px;
+    text-align: left;
+  }
+  
+  /* estilo del navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(64, 81, 158);
+  }
+  
+  /* estilo de links del nav */
+  .topnav a {
+    float: right    ;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /*estilo del boton sobre...*/
+  .about {
+      background-color: rgb(76, 170, 199);
+  }
+  
+  /* color hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* columnas flotantes */
+  .columna {
+    float: left;
+    margin-left: 70px;
+    margin-top: 15px;
+  }
+  
+  /* columna Izquierda */
+  .columna.izquierda {
+    width: 60%;
+    color: cornflowerblue;
+  }
+
+  /* columna derecha*/
+  .columna.derecha {
+    width: 25%;
+    color: rgb(192, 60, 60);
+  }
+
+  /* config de la imagen columna izquierda*/
+  .img-izq {
+    height: 15%;
+    width: 15%;
+  }
+
+  /* config de la imagen columna derecha */
+  .img-der {
+    width: 70%;
+    height: 60%;
+   }
+
+  /* limpiar despues */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .titulo {
+    text-align: left;
+    color: rgb(0, 29, 110);
+    font-size: 25px;
+    padding-top: 20px;
+  }
+
+  /* otra columna*/
+  .columna.otra {
+    width: 22%;
+    color: rgb(0, 29, 110);
+    margin-left: 33px;
+  }
+
+  /* config de los accesos a redes sociales */
+  .sociales{
+    float: right;
+    margin-right: 20px;
+   }
+
+   .sociales img{
+    display:inline-block;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Responsive - acomoda segun el ancho */
+  @media screen and (max-width: 600px) {
+    .columna.derecha, .columna.izquierda, .columna.otra {
+      width: 100%;
+    }
+  }

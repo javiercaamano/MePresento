@@ -1,0 +1,51 @@
+body{
+  background-color: rgb(255, 255, 255);
+  font-family: Verdana;
+  }
+
+  main{
+    padding: 10px;
+  }
+
+  /* config de la barra de navegación*/
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 16px;
+}
+
+li {
+   float:right;
+   margin-top: 20px;
+}
+
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+
+li a:hover:not(.active) {
+   background-color: #111;
+ }
+ .active {
+   background-color: #4CAF50;
+ }
+/* fin config de la barra de navegación*/
+
+
+
+
+/*-----------------------sector etiquetas-------------------*/
+/* config logotipo */
+#img-logo{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 5%;
+  width: 12%;
+}
