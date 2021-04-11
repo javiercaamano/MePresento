@@ -1,105 +1,142 @@
+/*Pretende ser un Css sin Bootstrap*/
 
-body{
-  /*background-image: linear-gradient(rgb(26, 28, 31), rgba(25, 34, 65, 0.973), rgba(32, 58, 104, 0.959));
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgb(0, 0, 0);
-  width: 100%;
-  height: auto;
-  position: fixed;*/
-  background-color: whitesmoke;
-  font-family: Verdana;
-  /*padding: 10px;*/
+body {
+  margin: 0;
+  font-family: verdana;
+}
+  
+/* estilo del Header */
+.header {
+  background-color: #ffbcbc;
+  padding: 2px;
+  text-align: left;
+}
+  
+/* estilo del navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(64, 81, 158);
+}
+  
+/* estilo de links del nav */
+.topnav a {
+  float: right    ;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-main{
-  padding: 10px;
+/*estilo del boton sobre...*/
+.about {
+  background-color: rgb(76, 170, 199);
+}
+  
+/* color hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-/* config de la barra de navegación*/
-ul {
-   list-style-type: none;
-   margin: 0px;
-   padding: 0px;
-   overflow: hidden;
-   background-color: #333;
-   font-size: 16px;
-}
-
-li {
-    float:right;
-    margin-top: 20px;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-li a:hover:not(.active) {
-    background-color: #111;
-  }
-  .active {
-    background-color: #4CAF50;
-  }
-/* fin config de la barra de navegación*/
-
-.trtabla1{
-  height: 7rem;
-}
-
-.centraTabla{
-text-align: center;
-}
-
-.centraTabla table {
-margin: 0 auto;
-text-align: left;
-}
-
+/*-----------------------sector etiquetas-------------------*/
 /* config logotipo */
 #img-logo{
+  margin-left: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
   height: 5%;
   width: 12%;
 }
 
-/* config de la imagen de la card */
-#imag-card{
-  height: 60%;
+/* columnas flotantes */
+.columna {
+  float: left;
+  margin-left: 70px;
+  margin-top: 15px;
+}
+  
+/* columna Izquierda */
+.columna.izquierda {
   width: 60%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  color: cornflowerblue;
 }
 
-#p1tabla{
-  color:rgb(3, 112, 180);
-  font-size: 28px;
+/* columna derecha*/
+.columna.derecha {
+  width: 25%;
+  color: rgb(192, 60, 60);
 }
 
-/* Config iamgenes de cards de abajo */
-#imag-card2{
-  height: 100px;
-  width: 100px;
-  display: block;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+/* config de la imagen columna izquierda*/
+.img-izq {
+  height: 15%;
+  width: 15%;
 }
+
+/* config de la imagen columna derecha */
+.img-der {
+  width: 70%;
+  height: 60%;
+}
+
+/* limpiar despues */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.p2 {
+  color: red;
+}
+
+/* config del titulo separador */
+.titulo {
+  text-align: left;
+  color: rgb(0, 29, 110);
+  font-size: 25px;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+/* otra columna*/
+.columna.otra {
+  text-align: justify;
+  width: 22%;
+  height: 250px;
+  color: rgb(0, 29, 110);
+  margin-left: 20px;
+  /*border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(0, 29, 110);*/
+}
+
+/* texto de las columnas bajas
+.texto {
+  margin-left: 10px;
+  margin-right: 10px;
+}*/
 
 /* config de los accesos a redes sociales */
-#sociales{
+.sociales{
   float: right;
   margin-right: 20px;
- }
+}
 
-#sociales img{
+.sociales img{
   display:inline-block;
   height: 50px;
   width: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Responsive - acomoda segun el ancho */
+@media screen and (max-width: 600px) {
+  .columna.derecha, .columna.izquierda, .columna.otra {
+    width: 100%;
+  }
 }

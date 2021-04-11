@@ -1,0 +1,105 @@
+
+body{
+  /*background-image: linear-gradient(rgb(26, 28, 31), rgba(25, 34, 65, 0.973), rgba(32, 58, 104, 0.959));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  position: fixed;*/
+  background-color: whitesmoke;
+  font-family: Verdana;
+  /*padding: 10px;*/
+}
+
+main{
+  padding: 10px;
+}
+
+/* config de la barra de navegación*/
+ul {
+   list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+   overflow: hidden;
+   background-color: #333;
+   font-size: 16px;
+}
+
+li {
+    float:right;
+    margin-top: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+li a:hover:not(.active) {
+    background-color: #111;
+  }
+  .active {
+    background-color: #4CAF50;
+  }
+/* fin config de la barra de navegación*/
+
+.trtabla1{
+  height: 7rem;
+}
+
+.centraTabla{
+text-align: center;
+}
+
+.centraTabla table {
+margin: 0 auto;
+text-align: left;
+}
+
+/* config logotipo */
+#img-logo{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 5%;
+  width: 12%;
+}
+
+/* config de la imagen de la card */
+#imag-card{
+  height: 60%;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#p1tabla{
+  color:rgb(3, 112, 180);
+  font-size: 28px;
+}
+
+/* Config iamgenes de cards de abajo */
+#imag-card2{
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* config de los accesos a redes sociales */
+#sociales{
+  float: right;
+  margin-right: 20px;
+ }
+
+#sociales img{
+  display:inline-block;
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
