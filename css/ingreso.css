@@ -39,6 +39,7 @@ body {
     color: black;
   }
   
+
   /* config logotipo */
   #img-logo{
     margin-left: 5px;
@@ -48,46 +49,29 @@ body {
     width: 12%;
   }
   
-  /* columnas flotantes */
-  .columna {
-    float: left;
-    margin-left: 90px;
-    margin-top: 15px;
-    width: 45%;
-    color:darkgreen;
+.box-ingreso{
+    text-align: justify;
+    border: 1px;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.formato{
+    width: 50%;
+    background-color: rgb(1, 189, 196);
+}
+
+.formulario {
+    padding-top: 2%;
+    margin:auto;
+    width: 50%;
+    border-radius: 5px;
+    padding-bottom: 6%;
   }
-    
-  /* columna Izquierda */
-  .columna.izquierda {
-    width: 40%;
-  }
-  
-  /* columna derecha*/
-  .columna.derecha {
-    width: 30%;
-  }
-  
-  /* config de la imagen columna izquierda*/
-  .img-izq {
-    height: 50%;
-    width: 60%;
-  }
-  
-  /* config de la imagen columna derecha */
-  .img-der {
-    width: 85%;
-    height: 60%;
-  }
-  
-  /* limpiar despues */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    height: 56px;
-  }
-  
-   /* config de los accesos a redes sociales */
+
+  /* config de los accesos a redes sociales */
   .sociales{
     float: right;
     margin-right: 20px;
