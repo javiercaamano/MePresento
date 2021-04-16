@@ -1,60 +1,138 @@
 <!DOCTYPE html>
-<html>
-<!-- /* Formulario de alta de ususario */ -->
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Alta form</title>
-    <link rel="icon" href="img/logo-jav.png">
-    <link rel="stylesheet" href="../css/alta.css" type="text/css">
-    
-    <!-- barra de redes sociales  -->
-    <div class="sociales">
-        <p><a href="https://twitter.com/jac09LRJ" target="_blank"><img src="../img/tw.png" alt="twitter"></a>
-            <a href="https://www.facebook.com/javier.alb.caamano" target="_blank"><img src="../img/fbk.png"
-                    alt="facebook"></a>
-            <a href="https://www.instagram.com/javicaamanolrj/" target="_blank"><img src="../img/ins.png"
-                    alt="instagram"></a>
-            <a href="https://api.whatsapp.com/send?phone=+5493804640505&text=mensaje" target="_blank"><img
-                    src="../img/ws.png" alt="whatsapp"></a>
-        </p>
-    </div>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alta Form</title>
+	<link rel="icon" href="img/logo-jav.png">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/alta.css">
 
-    <!-- header y nav bar -->
-    <div class="header">
-        <img id="img-logo" src="../img/logo-jav.png">
-    </div>
-    <div class="topnav">
-        <a href="../index.html">regresar</a>
-        <a class="about" style="float:left" href="about.html">Sobre nosotros...</a>
-    </div>
+
+	<!-- barra de redes sociales  -->
+	<div class="sociales">
+		<p><a href="https://twitter.com/jac09LRJ" target="_blank"><img src="../img/tw.png" alt="twitter"></a>
+			<a href="https://www.facebook.com/javier.alb.caamano" target="_blank"><img src="../img/fbk.png"
+					alt="facebook"></a>
+			<a href="https://www.instagram.com/javicaamanolrj/" target="_blank"><img src="../img/ins.png"
+					alt="instagram"></a>
+			<a href="https://api.whatsapp.com/send?phone=+5493804640505&text=mensaje" target="_blank"><img
+					src="../img/ws.png" alt="whatsapp"></a>
+		</p>
+	</div>
+
+	<!-- header y nav bar -->
+	<div class="header">
+		<img id="img-logo" src="../img/logo-jav.png">
+	</div>
+	<div class="topnav">
+		<a href="../index.html">regresar</a>
+		<a class="about" style="float:left" href="about.html">Sobre nosotros...</a>
+	</div>
 </head>
 
 <body>
-    <!-- Formulario de alta -->
-    <h4 class="titu">Complete los datos necesarios, son todos obligatorios</h4>
-    
-    <div class="formulario">
-        <form action="../index.html">
-            <label for="email">E-mail</label>
-            <input type="text" id="email" name="email" placeholder="tu-email@email.com">
+	<main>
+		<section Class="alta">
+			<form action="" class="formulario" id="formulario">
+				<!-- Grupo: Usuario -->
+				<div class="formulario__grupo" id="grupo__usuario">
+					<label for="usuario" class="formulario__label">Usuario</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Nick_Name123">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener
+						numeros, letras y guion bajo.</p>
+				</div>
 
-            <label for="pass">Contraseña</label>
-            <input type="password" id="pass" name="contrasenia">
+				<!-- Grupo: Nombre -->
+				<div class="formulario__grupo" id="grupo__nombre">
+					<label for="nombre" class="formulario__label">Nombre</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Perez">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener
+						numeros, letras y espacios.</p>
+				</div>
 
-            <label for="rep-pass">Repite Contraseña</label>
-            <input type="password" id="rep-pass" name="rep-contrasenia">
+				<!-- Grupo: Contraseña -->
+				<div class="formulario__grupo" id="grupo__password">
+					<label for="password" class="formulario__label">Contraseña</label>
+					<div class="formulario__grupo-input">
+						<input type="password" class="formulario__input" name="password" id="password">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+				</div>
 
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+				<!-- Grupo: Contraseña 2 -->
+				<div class="formulario__grupo" id="grupo__password2">
+					<label for="password2" class="formulario__label">Repetir Contraseña</label>
+					<div class="formulario__grupo-input">
+						<input type="password" class="formulario__input" name="password2" id="password2">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+				</div>
+
+				<!-- Grupo: Correo Electronico -->
+				<div class="formulario__grupo" id="grupo__correo">
+					<label for="correo" class="formulario__label">Correo Electrónico</label>
+					<div class="formulario__grupo-input">
+						<input type="email" class="formulario__input" name="correo" id="correo"
+							placeholder="correo@correo.com">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+						guion bajo.</p>
+				</div>
+
+				<!-- Grupo: Teléfono -->
+				<div class="formulario__grupo" id="grupo__telefono">
+					<label for="telefono" class="formulario__label">Teléfono</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="telefono" id="telefono"
+							placeholder="3804123456">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14
+						dígitos.
+					</p>
+				</div>
+
+				<!-- Grupo: Terminos y Condiciones -->
+				<div class="formulario__grupo" id="grupo__terminos">
+					<label class="formulario__label">
+						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+						Acepto los Terminos y Condiciones
+					</label>
+				</div>
+
+				<div class="formulario__mensaje" id="formulario__mensaje">
+					<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+						correctamente. </p>
+				</div>
+
+				<div class="formulario__grupo formulario__grupo-btn-enviar">
+					<button type="submit" class="formulario__btn">Enviar</button>
+					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!
+					</p>
+				</div>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<div class="topnav">
+			<p style="text-align: center; color: honeydew;">On-Line Me (C) 2021. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+	<script src="../js/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
-
-<!-- Footer -->
-<footer>
-    <div class="topnav">
-        <p style="text-align: center; color: honeydew;">On-Line Me (C) 2021. Todos los derechos reservados.</p>
-    </div>
-</footer>
 
 </html>

@@ -10,6 +10,23 @@ Este sitio pretende permitir que la gente pueda crear on-line su curriculum y po
 
 ## Actualizaciones:
 
+### 16-04
+	
+	Version que incormpora JavaScript en el formulario de Alta de usuario
+
+		- Validación de cada input
+			-Contenido adecuado para cada caso en NombreUsuario, Nombre y Password.
+			-Validación de paridad entre Password y verificación de la misma.
+			-Validacíon de formato correcto de E-mail.
+			-Validación de checkbox seleccionado en "Terminos & Condiciones".
+			-Validación de Telefono (no letras, espacios o signos).
+			-Validación de "todos los campos correctos y completos" en el boton Enviar.
+		Obviamente la info no se envía a ningún lado "TODAVIA".
+
+	
+	
+
+
 ### 11-04
 
 	Versión cero Boostrap implementada ok
@@ -30,7 +47,4 @@ Este sitio pretende permitir que la gente pueda crear on-line su curriculum y po
 
 	Index actual: index2.html  --  Va quedando mas cerca de la idea original
 	Style.ccs: style2.ccs  --  Contiene los estilos del actual index
-
-	
-
 

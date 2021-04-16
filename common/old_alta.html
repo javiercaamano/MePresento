@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+<!-- /* Formulario de alta de ususario */ -->
 
 <head>
     <meta charset="utf-8" />
-    <title>on-line Me</title>
-    <link rel="icon" href="../img/logo-jav.png">
-    <link rel="stylesheet" href="../css/ingreso.css" type="text/css">
-
+    <title>Alta form</title>
+    <link rel="icon" href="img/logo-jav.png">
+    <link rel="stylesheet" href="../css/alta.css" type="text/css">
+    
     <!-- barra de redes sociales  -->
     <div class="sociales">
         <p><a href="https://twitter.com/jac09LRJ" target="_blank"><img src="../img/tw.png" alt="twitter"></a>
@@ -25,38 +26,35 @@
     </div>
     <div class="topnav">
         <a href="../index.html">regresar</a>
-        <a href="../common/alta.html">Registrate</a>
+        <a class="about" style="float:left" href="about.html">Sobre nosotros...</a>
     </div>
 </head>
 
 <body>
     <!-- Formulario de alta -->
+    <h4 class="titu">Complete los datos necesarios, son todos obligatorios</h4>
+    
     <div class="formulario">
-        <h2 id="titulo">Bienvenido amigo!</h2>
-        <p>Ingresa tus datos para acceder a tu cuenta</p>
-        <form action="">
-            <fieldset>
-                <!-- <legend>Ingreso de Usuario:</legend> -->
+        <form action="../index.html">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="tu-email@email.com">
 
-                <label for="user">Usuario:</label><br>
-                <input type="text" id="user" name="user" value="e-mail" style="width: 100%;"><br><br>
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass" name="contrasenia">
 
-                <label for="pass">Contraseña</label><br>
-                <input type="password" id="pass" name="pass" style="width: 100%;"><br><br>
+            <label for="rep-pass">Repite Contraseña</label>
+            <input type="password" id="rep-pass" name="rep-contrasenia">
 
-                <input id="jav" type="submit" value="Ingresar">
-            </fieldset>
+            <input type="submit" value="Submit">
         </form>
     </div>
 </body>
 
-<script src="../js/ingreso.js"></script>
 <!-- Footer -->
 <footer>
     <div class="topnav">
         <p style="text-align: center; color: honeydew;">On-Line Me (C) 2021. Todos los derechos reservados.</p>
     </div>
 </footer>
-</body>
 
 </html>
