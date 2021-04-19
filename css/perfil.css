@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+
+/* 'Roboto', sans-serif; */
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background: #ffffff;
+}
+
+
+/* ------------Formato del formulario general---------------*/
+.formu {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/*distancia entre columndas*/
+	gap: 50px;
+	padding: 30px;
+
+}
+
+/* --------Formato de grupo general------------*/
+.formu_grupo {
+	display: block;
+	color: #ffffff;
+	padding: 10px;
+	background-color: #449bff;
+	border-radius: 10px; 
+	border: 2px solid #7bccfa;
+	margin: 10;
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.726);
+}
+ 
+/* ------------- Grupo particular -------------*/
+.formu_otro {
+	color: #161616;
+	background-color: #ffffff;
+	border: 0px solid #23aeff;
+
+}
+
+
+/* ------formato etiqueta --------*/
+.formu_label {
+	display: block;
+	font-weight: bold;
+	font-size: 22px;
+	padding: 10px;
+	color: #ffffff;
+	margin: 10;
+	text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.726);
+}
+
+
+/* ------formato etiqueta mi info --------*/
+.formu__label-mia{
+	/* color: #4476ff; */
+	color: #449bff;
+}
+
+/* ------formato parrafo gral --------*/
+.formu_parrafo {
+	text-align: justify;
+	padding: 0px 25px 25px 25px;
+	font-size: 14px;
+	font-weight:bold;
+}
+
+.parrafo_mio {
+	text-align: justify;
+	padding: 0px 25px 25px 25px;
+	font-size: 14px;
+
+}
+
+
+/* grid-column: span 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 14px;
+	display: none; */
+
+
+	/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+
+	.formu {
+		grid-template-columns: 1fr;
+	}
+
+	.formu_grupo {
+		grid-column: 1;
+	}
+}
+

@@ -34,23 +34,23 @@
     <div class="formulario">
         <h2 id="titulo">Bienvenido amigo!</h2>
         <p>Ingresa tus datos para acceder a tu cuenta</p>
-        <form action="">
+        <form action="../common/perfil.html">
             <fieldset>
                 <!-- <legend>Ingreso de Usuario:</legend> -->
 
                 <label for="user">Usuario:</label><br>
-                <input type="text" id="user" name="user" value="e-mail" style="width: 100%;"><br><br>
+                <input type="text" id="user" name="user" value="nombre de usuario..." style="width: 100%;"><br><br>
 
                 <label for="pass">Contraseña</label><br>
                 <input type="password" id="pass" name="pass" style="width: 100%;"><br><br>
 
-                <input id="jav" type="submit" value="Ingresar">
+                <button type="submit" class="boton_personal" id="boton_personal"
+                    onclick="location.href='../common/perfil.html';">Mi Perfil</button>
             </fieldset>
         </form>
     </div>
 </body>
 
-<script src="../js/ingreso.js"></script>
 <!-- Footer -->
 <footer>
     <div class="topnav">
